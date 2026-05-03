@@ -4,9 +4,9 @@ A place to collect and share causal models of learning systems. The focus here i
 
 > The models here should be treated as works in progress, created within a particular context. Learning is messy complex, and there are multiple (valid) ways to represent the same system.
 
-There are not many models of learning systems out there i
+There are not many models of learning systems out there, but those that are publically available we can try and collect here, pointing to the paper they are from.
 
-(add license info here)
+(add license info here - when sorted out)
 
 ## Using this library
 
