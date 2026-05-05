@@ -31,11 +31,18 @@ E -> D
 
 Note that DAGitty includes details about *outcome* and *exposure*, which are useful but specific to the research question, not to the causal model. Moreover, there are key features that we should include so that these models are more readily transferable to other contexts, such as:
 
-- An outline of the **Model Context**: what system is trying to be modelled, in what circumstances?
+- An outline of the **Model Context**: what system is trying to be modelled, in what circumstances? I believe this should also include how the model was conceptualised, so if the model was:
+  -  purely *illustrative* (there are some that are used as a teaching example);
+  -  *derived from literature*, such as representation of a theory;
+  -  *elicited from experts*, or;
+  -  *learned from data*, or;
+  -  some combination of the above. 
 - A **Node Description** of each node, ideally in some detail. If we say "Student Knowledge" what is it exactly?
 - A **DOI** if the model appeared in a paper, or
 - **URL** if there is a relevant online source of the model to refer to.
 - ...anything else? This list is still in draft - aiming for a minimally sufficient list of compulsory graph meta-data and perhaps some optional extras.
+
+
 
 ### Tools for drawing models
 
