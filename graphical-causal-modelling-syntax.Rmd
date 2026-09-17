@@ -1,0 +1,37 @@
+---
+output: github_document
+date: "2026-09-17"
+---
+
+# DOT syntax options and translators
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+> **Edge options**
+> [dir = ...]
+> forward (default), both, back, none (undirected edge)
+> [arrowhead / arrowtail = ...]
+> normal, inv, dot, odot, invdot, invodot, none, tee, empty, invempty, diamond, odiamond, ediamond, crow, box, obox, open, halfopen, vee
+> [color = ...]
+
+
+There are a range of ways that graphical causal models are represented, beyond blobs and arrows. Here we attempt to document the various options, provide a way to represent this in the DOT language, and provide functions to read this into `DAGitty` or `tidygraph` objects. 
+
+To cover:
+
+- Double headed arrows as unmeasured confounders
+- Partial ancestral graphs (PAGs). These include `@->`, `<->` and `@-@`. Will need a way to visually distinguish the last two. 
+- Generally adding flavour to any edge - such as using dashed lines to indicate uncertainty about an edge. 
+
+```{r pag-example}
+digraph pag_example {
+  edge [dir = both, arrowtail = none, arrowhead = normal]  /* default: tail -> arrowhead */
+
+  A -> B [arrowtail = odot,  arrowhead = normal]  /* A o-> B  */
+  B -> C [arrowtail = normal, arrowhead = normal] /* B <-> C  */
+  A -> D [arrowtail = odot,  arrowhead = odot]    /* A o-o D  */
+}
+```

@@ -67,12 +67,12 @@ library(rsvg)
 rohrer.2018.fig2 <- '
 digraph {
 
-// A block of data about the model
+// Model
 // the "context" field should *always* be included.
 context="This model is for illustation only, but describes a relationship involving education.";
 doi="https://doi.org/10.1177/2515245917745629";
 
-// A block of data about the nodes
+// Nodes
 // The "label" field is how the node is displayed, and a "description" field should 
 // always be included, and ideally err on the side of being overly descriptive.
 G [label="Grades", description = "A persons grades over a long period of tie"]
@@ -80,7 +80,7 @@ Int [label="Intelligence", description = "A persons natural or general level of 
 EA [label="Educational Attainment", description = "A persons natural or general level of intelligence"]
 Inc [label="Income", description="A persons income"]
 
-// A block of data about the edges
+// Edges
 Int -> G;
 Int -> Inc;
 Int -> EA;
@@ -88,15 +88,11 @@ G -> EA;
 EA -> Inc;
 }
 '
+```
 
+``` r
 # This code plots
-# grViz(rohrer.2018.fig2)
-
-# But we need fiddle by exporting to deal with github_document restrictions
-grViz(rohrer.2018.fig2) |>
-    export_svg() |>
-    charToRaw() |> 
-    rsvg_svg("readme_diagram_1.svg")
+grViz(rohrer.2018.fig2)
 ```
 
 <figure>
