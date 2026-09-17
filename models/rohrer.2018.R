@@ -57,6 +57,7 @@ EA [label="Educational Attainment", description = "A persons natural or general 
 Inc [label="Income", description="A persons income"]
 U [description="Unmeasured confounders"]
 
+// Edges
 C_Int -> EA;
 C_Int -> A_Int;
 C_Int -> Inc;
