@@ -132,7 +132,9 @@ meaningful for a causal model. More importantly there are things that we
 DAGitty.
 
 A more in-depth tour of some options are in the [graphical causal
-modelling syntax](graphical-causal-modelling-syntax.md) document.
+modelling
+syntax](%7B%%20link%20graphical-causal-modelling-syntax.md%20%%7D)
+document.
 
 To illustrate, here is a DAG using the DOT language and then displaying
 using the `DiagrammeR` package:
