@@ -16,7 +16,8 @@ doi="https://doi.org/10.1371/journal.pone.0069449.g001";
 TP [label = "TP", description = "Teaching performance"]
 RMTS [label = "RM-TS", description = "Role model - teacher supervisor"]
 
-// Edges
+// Edge
+edge [type = "causal"]
 TP -> RMTS;
 }
 '
@@ -34,6 +35,7 @@ RMphy [label = "RM-phy", description = "Role model - physician"]
 RMper [label = "RM-per", description = "Role model - person"]
 
 // Edges
+edge [type = "causal"]
 TP -> RMTS;
 TP -> RMphy;
 TP -> RMper;
@@ -53,6 +55,7 @@ RMphy [label = "RM-phy", description = "Role model - physician"]
 RMper [label = "RM-per", description = "Role model - person"]
 
 // Edges
+edge [type = "causal"]
 TP -> RMTS;
 RMTS -> RMper;
 RMper -> TP;
@@ -72,6 +75,7 @@ RMphy [label = "RM-phy", description = "Role model - physician"]
 RMper [label = "RM-per", description = "Role model - person"]
 
 // Edges
+edge [type = "causal"]
 RMphy -> RMTS [dir = both, arrowtail = normal, arrowhead = normal];
 }
 '
@@ -89,6 +93,7 @@ RMphy [label = "RM-phy", description = "Role model - physician"]
 RMper [label = "RM-per", description = "Role model - person"]
 
 // Edges
+edge [type = "causal"]
 TP -> RMphy
 RMphy -> RMTS
 }
@@ -107,6 +112,7 @@ RMphy [label = "RM-phy", description = "Role model - physician"]
 RMper [label = "RM-per", description = "Role model - person"]
 
 // Edges
+edge [type = "causal"]
 TP -> RMphy;
 RMTS -> RMphy;
 }
@@ -142,6 +148,7 @@ HO    [label = "HO", description = "Hospital"]
 SP    [label = "SP", description = "Specialty"]
 
 // Edges
+edge [type = "causal"]
 TP -> RMphy [color=grey30];
 TP -> RMTS [color=grey30];
 TP -> RMper [color=grey30];
@@ -201,6 +208,7 @@ fillcolor = grey70]
 Z    [label = "Z", description = "All covariates, namely: faculty’s sex and years of experience, residents’ sex and residency training year, hospital and specialty. (This collapsing of the covariates into one variable Z was only intended to make the DAGs more legible in this illustrative study; but we discourage doing so in actual applications.)"]
 
 // Edges
+edge [type = "causal"]
 TP -> RMphy;
 TP -> RMTS;
 TP -> RMper;
@@ -236,6 +244,7 @@ fillcolor = grey70]
 Z    [label = "Z", description = "All covariates, namely: faculty’s sex and years of experience, residents’ sex and residency training year, hospital and specialty. (This collapsing of the covariates into one variable Z was only intended to make the DAGs more legible in this illustrative study; but we discourage doing so in actual applications.)"]
 
 // Edges
+edge [type = "causal"]
 TP -> RMphy;
 TP -> RMTS;
 TP -> RMper;
@@ -260,7 +269,7 @@ doi="https://doi.org/10.1371/journal.pone.0069449.g001";
 
 // Defaults
 node [style = filled, fillcolor = grey90]
-edge [dir = forward]
+edge [dir = forward, type = "causal"]
 
 // Nodes
 TP    [label = "TP", description = "Teaching performance", 
@@ -298,7 +307,7 @@ doi="https://doi.org/10.1371/journal.pone.0069449.g001";
 
 // Defaults
 node [style = filled, fillcolor = grey90]
-edge [dir = forward]
+edge [dir = forward, type = "causal"]
 
 // Nodes
 TP    [label = "TP", description = "Teaching performance", 
@@ -336,7 +345,7 @@ doi="https://doi.org/10.1371/journal.pone.0069449.g001";
 
 // Defaults
 node [style = filled, fillcolor = grey90]
-edge [dir = forward]
+edge [dir = forward, type = "causal"]
 
 // Nodes
 TP    [label = "TP", description = "Teaching performance", 
@@ -373,7 +382,7 @@ doi="https://doi.org/10.1371/journal.pone.0069449.g001";
 
 // Defaults
 node [style = filled, fillcolor = grey90]
-edge [dir = forward]
+edge [dir = forward, type = "causal"]
 
 // Nodes
 TP    [label = "TP", description = "Teaching performance", 
