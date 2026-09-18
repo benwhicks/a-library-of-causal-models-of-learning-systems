@@ -2,8 +2,8 @@ The Learning System Causal Model Library
 ================
 
 A place to collect and share causal models of learning systems. The
-focus here is (initially) on Graphical Causal Models (GCMs), including
-causal Directed Acyclic Graphs (DAGs)
+focus here is (initially) on graphical causal models (**GCM**s),
+including causal directed acyclic graphs (**DAG**s)
 
 > The models here should be treated as works in progress, created within
 > a particular context. Learning is messy complex, and there are
@@ -14,34 +14,25 @@ those that are publicly available we can try and collect here, pointing
 to the paper they are from.
 
 This repository uses a dual license. Code (R scripts, parsers, site
-tooling) is released under the MIT License — reuse, modify, and
+tooling) is released under the MIT License - reuse, modify, and
 redistribute freely, with attribution. The causal models themselves are
-released under CC BY 4.0 — you’re free to reuse and adapt them provided
-you credit the original work, indicated in a model’s metadata (doi,
-url).
+released under CC BY 4.0: you’re free to reuse and adapt them provided
+you credit the original work, which is indicated in a model’s metadata
+(either a DOI or URL).
 
-## Exploring the models
+# Exploring the models
 
 …to come…
 
-## Using this library
+# Using this library
 
-### The DOT language, and key metadata
+## Describing models, nodes, edges
 
-The language used to save diagrams in tools like
-[DAGitty](https://dagitty.net/learn/index.html) and the related R
-Packages is called the [DOT
-language](https://graphviz.org/doc/info/lang.html). It is highly
-customisable but not everything needs to be included to share what is
-meaningful for a causal model. More importantly there are things that we
-*should* include that are not the default in some tools, such as in
-DAGitty.
+There are key features that we should include so that these models are
+more readily transferable to other contexts. We split this into
+meta-data for the **model**, **nodes** and **edges**.
 
-Moreover, there are key features that we should include so that these
-models are more readily transferable to other contexts. We split this
-into meta-data for the **model**, **nodes** and **edges**.
-
-#### Models
+### Models
 
 > #### *Model* meta data
 >
@@ -65,7 +56,7 @@ into meta-data for the **model**, **nodes** and **edges**.
 > The **doi** or **url** to where the model was sourced from, if
 > applicable.
 
-#### Nodes
+### Nodes
 
 > #### *Node* meta data
 >
@@ -76,18 +67,22 @@ into meta-data for the **model**, **nodes** and **edges**.
 > represents. Ideally this should err on the side of over-explaining
 > than under. If we say “Student Knowledge” – what exactly do we mean
 > *in this model* by that?
+>
+> *Optional*: A **cluster** attribute to indicate how the model could be
+> coarsened to fewer nodes. (Such as is work on cluster DAGs or causal
+> abstractions).
 
-#### Edges
+### Edges
 
 There are a range of edges used in typical graphical causal models, with
 the predominant being $A \rightarrow B$ to indicate that $A$ influences
 $B$ directly. However, we need a consistent representation for storing a
 variety of models. In a graph **skeleton** an undirected edge, $-$, is
-used to show causal connection without confirming direction. An
-**acyclic directed mixed graph (ADMG)** use
-$A \leftarrow\!\rightarrow B$ as shorthand for a latent confounding
-structure, $A \leftarrow U \rightarrow B$ - importantly this is *not* to
-represent cause flowing both ways. A **partial ancestral graph (PAG)**
+used to show causal connection without confirming direction. An acyclic
+directed mixed graph (**ADMG**) use $A \leftarrow\!\rightarrow B$ as
+shorthand for a latent confounding structure,
+$A \leftarrow U \rightarrow B$, and importantly this is *not* used to
+represent cause flowing both ways. A partial ancestral graph (**PAG**)
 also uses this shorthand for unmeasured confounding factors, as well as
 a hollow dot as an endpoint to represent uncertainty in the algorithm
 used to learn the graph. A PAG has $\circ\mkern-8mu\rightarrow$ to
@@ -124,6 +119,20 @@ directions.
 >   *causal* or *confound* with more information. This edge type can
 >   also be used throughout in structure learning DAGs / PAGs if
 >   desired.
+
+## Model syntax
+
+The language used to save diagrams in tools like
+[DAGitty](https://dagitty.net/learn/index.html) and the related R
+Packages is called the [DOT
+language](https://graphviz.org/doc/info/lang.html). It is highly
+customisable but not everything needs to be included to share what is
+meaningful for a causal model. More importantly there are things that we
+*should* include that are not the default in some tools, such as in
+DAGitty.
+
+A more in-depth tour of some options are in the [graphical causal
+modelling syntax](graphical-causal-modelling-syntax.md) document.
 
 To illustrate, here is a DAG using the DOT language and then displaying
 using the `DiagrammeR` package:
@@ -203,21 +212,21 @@ model:
     E -> D
     }
 
-### Tools for drawing models
+## Tools for drawing models
 
 - [DAGitty](https://dagitty.net/dags.html)
 - [Loopy v4](https://github.com/benwhicks/loopy) - requires download and
   run locally at this stage, or check out the
   [original](https://ncase.me/loopy/) by the brilliant Nicky Case.
 
-### Tools for manipulation
+## Tools for manipulation
 
 …coming. I have lots of code, based on the `dagitty` and `tidygraph` R
 packages, but it needs some organising first. We will need functions to
 move from and to DAGitty and other tools and the more flexible DOT
 language.
 
-## Learning more
+# Learning more
 
 See [this list of
 resources](https://sites.google.com/view/lak26-workshop-gcm-for-la/further-reading).

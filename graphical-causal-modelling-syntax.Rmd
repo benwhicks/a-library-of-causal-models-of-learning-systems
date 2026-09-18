@@ -3,7 +3,7 @@ output: github_document
 date: "2026-09-17"
 ---
 
-# DOT syntax options and translators
+# Graphical causal modelling syntax
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -26,7 +26,7 @@ To cover:
 - Partial ancestral graphs (PAGs). These include `@->`, `<->` and `@-@`. Will need a way to visually distinguish the last two. 
 - Generally adding flavour to any edge - such as using dashed lines to indicate uncertainty about an edge. 
 
-```{r pag-example}
+```
 digraph pag_example {
   edge [dir = both, arrowtail = none, arrowhead = normal]  /* default: tail -> arrowhead */
 
