@@ -1,6 +1,6 @@
+Graphical causal modelling syntax
+================
 2026-09-17
-
-# Graphical causal modelling syntax
 
 > **Edge options** \[dir = …\] forward (default), both, back, none
 > (undirected edge) \[arrowhead / arrowtail = …\] normal, inv, dot,

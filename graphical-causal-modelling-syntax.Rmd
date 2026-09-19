@@ -1,9 +1,9 @@
 ---
-output: github_document
+title: "Graphical causal modelling syntax"
 date: "2026-09-17"
+layout: default
+output: github_document
 ---
-
-# Graphical causal modelling syntax
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
