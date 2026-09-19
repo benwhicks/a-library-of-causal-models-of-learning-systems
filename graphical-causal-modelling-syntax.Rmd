@@ -2,7 +2,9 @@
 title: "Graphical causal modelling syntax"
 date: "2026-09-17"
 layout: default
-output: github_document
+output:
+  github_document:
+    md_extensions: -smart
 ---
 
 ```{r setup, include=FALSE}
