@@ -5,6 +5,7 @@ layout: default
 output:
   github_document:
     md_extensions: -smart
+always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
