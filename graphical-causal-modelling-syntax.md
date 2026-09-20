@@ -2,10 +2,10 @@ Graphical causal modelling syntax
 ================
 2026-09-17
 
-> **Edge options** \[dir = ...\] forward (default), both, back, none
-> (undirected edge) \[arrowhead / arrowtail = ...\] normal, inv, dot,
+> **Edge options** \[dir = …\] forward (default), both, back, none
+> (undirected edge) \[arrowhead / arrowtail = …\] normal, inv, dot,
 > odot, invdot, invodot, none, tee, empty, invempty, diamond, odiamond,
-> ediamond, crow, box, obox, open, halfopen, vee \[color = ...\]
+> ediamond, crow, box, obox, open, halfopen, vee \[color = …\]
 
 There are a range of ways that graphical causal models are represented,
 beyond blobs and arrows. Here we attempt to document the various

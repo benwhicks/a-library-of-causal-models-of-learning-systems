@@ -17,13 +17,13 @@ to the paper they are from.
 This repository uses a dual license. Code (R scripts, parsers, site
 tooling) is released under the MIT License - reuse, modify, and
 redistribute freely, with attribution. The causal models themselves are
-released under CC BY 4.0: you're free to reuse and adapt them provided
-you credit the original work, which is indicated in a model's metadata
+released under CC BY 4.0: you’re free to reuse and adapt them provided
+you credit the original work, which is indicated in a model’s metadata
 (either a DOI or URL).
 
 # Exploring the models
 
-...to come...
+…to come…
 
 # Using this library
 
@@ -66,7 +66,7 @@ meta-data for the **model**, **nodes** and **edges**.
 >
 > A node **description** attribute that outlines exactly what the node
 > represents. Ideally this should err on the side of over-explaining
-> than under. If we say "Student Knowledge" -- what exactly do we mean
+> than under. If we say “Student Knowledge” – what exactly do we mean
 > *in this model* by that?
 >
 > *Optional*: A **cluster** attribute to indicate how the model could be
@@ -99,13 +99,13 @@ directions.
 >
 > - *causal* edge, which can be directed `->` or undirected `--`. The
 >   causal undirected edge `--` says nothing about the direction, only
->   that the two nodes are not independent -- they are causally
->   connected somehow, but there is no knowledge of the direction, or if
->   there is some underlying . Note that a causal bidirected edge is not
->   to be used, as this is typically used for a latent confound (see
->   below), and it is better practice to include both $A \rightarrow B$
->   and $B \rightarrow A$ to represent feedback between two nodes,
->   rather than the ambiguous $A \leftarrow\!\rightarrow B$.
+>   that the two nodes are not independent – they are causally connected
+>   somehow, but there is no knowledge of the direction, or if there is
+>   some underlying . Note that a causal bidirected edge is not to be
+>   used, as this is typically used for a latent confound (see below),
+>   and it is better practice to include both $A \rightarrow B$ and
+>   $B \rightarrow A$ to represent feedback between two nodes, rather
+>   than the ambiguous $A \leftarrow\!\rightarrow B$.
 > - *confound* edge, which is used to represent a latent (unmeasured)
 >   confound. This will be bidirected `<->` and if required distinguish
 >   these with dashed style for the edge (so `[style = dashed]` instead
@@ -192,7 +192,7 @@ used in Rohrer (2018)</figcaption>
 Although the text string is enough to define each model I have begun to
 describe each model, or set of models, in a single `.R` script so it can
 contain comments and be read into R via `source(thefile.R)`. An example
-here are the three models in this repo from Julia Rohrer's
+here are the three models in this repo from Julia Rohrer’s
 [paper](https://doi.org/10.1177/2515245917745629) that are related to
 education.
 
@@ -222,7 +222,7 @@ model:
 
 ## Tools for manipulation
 
-...coming. I have lots of code, based on the `dagitty` and `tidygraph` R
+…coming. I have lots of code, based on the `dagitty` and `tidygraph` R
 packages, but it needs some organising first. We will need functions to
 move from and to DAGitty and other tools and the more flexible DOT
 language.
