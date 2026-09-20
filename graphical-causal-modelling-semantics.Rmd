@@ -1,0 +1,23 @@
+---
+title: "Graphical causal modelling semantics"
+date: "2026-09-17"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Different kinds of graphical causal models have a different perspective on what the relationships between variables *mean*, which we attempt to codify here. 
+
+The baseline is a Causal DAG, where ...
+
+
+
+### GCMs from literature
+
+### GCMs from data
+
+SEMs are here too. 
+
+We also need to interperet the path diagrams of SEMs. A good translation will probably be including only edges between round nodes (constructs?) and not the measurement part, and typically only 

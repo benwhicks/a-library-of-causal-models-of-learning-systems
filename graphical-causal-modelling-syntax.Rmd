@@ -24,6 +24,7 @@ To cover:
 - Double headed arrows as unmeasured confounders
 - Partial ancestral graphs (PAGs). These include `@->`, `<->` and `@-@`. Will need a way to visually distinguish the last two. 
 - Generally adding flavour to any edge - such as using dashed lines to indicate uncertainty about an edge. 
+- How to articulate SEM paths. Need to think if it is any different. Should be the same as structure learning IMO. 
 
 ```
 digraph pag_example {

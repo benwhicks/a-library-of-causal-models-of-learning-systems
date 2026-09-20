@@ -8,7 +8,7 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-A place to collect and share causal models of learning systems. The focus here is (initially) on graphical causal models (**GCM**s), including causal directed acyclic graphs (**DAG**s)
+A place to collect and share causal models of learning systems. The focus here is (initially) on graphical causal models (**GCM**s), with a slight preference for causal directed acyclic graphs (**DAG**s)
 
 > The models here should be treated as works in progress, created within a particular context. Learning is messy complex, and there are multiple (valid) ways to represent the same system.
 
@@ -21,6 +21,8 @@ This repository uses a dual license. Code (R scripts, parsers, site tooling) is 
 ...to come...
 
 # Using this library
+
+There are some more detailed thoughts on GCM [syntax](graphical-causal-modelling-syntax) and [semantics](graphical-causal-modelling-semantics), but the practical aspects to use or contribute to this library are outlined below.
 
 ## Describing models, nodes, edges
 
@@ -36,7 +38,7 @@ There are key features that we should include so that these models are more read
 >  -  purely *illustrative* (there are some that are used as a teaching example);
 >  -  *derived-from-literature*, such as representation of a theory;
 >  -  *elicited-from-experts*, or;
->  -  *learned-from-data*, such as causal discovery, or;
+>  -  *learned-from-data*, such as causal discovery (and some SEMs), or;
 >  -  some combination of the above. 
 > 
 > Additional tags can be added to support searchable models in the future. 
