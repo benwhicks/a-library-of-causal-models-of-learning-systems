@@ -72,7 +72,7 @@ There are a range of edges used in typical graphical causal models, with the pre
 
 The language used to save diagrams in tools like [DAGitty](https://dagitty.net/learn/index.html) and the related R Packages is called the [DOT language](https://graphviz.org/doc/info/lang.html). It is highly customisable but not everything needs to be included to share what is meaningful for a causal model. More importantly there are things that we *should* include that are not the default in some tools, such as in DAGitty.
 
-A more in-depth tour of some options are in the [graphical causal modelling syntax]({% link graphical-causal-modelling-syntax.md %}) document.
+A more in-depth tour of some options are in the [graphical causal modelling syntax](graphical-causal-modelling-syntax.md) document.
 
 To illustrate, here is a DAG using the DOT language and then displaying using the `DiagrammeR` package:
 
