@@ -3,8 +3,8 @@ The Learning System Causal Model Library
 2026-09-19
 
 A place to collect and share causal models of learning systems. The
-focus here is (initially) on graphical causal models (**GCM**s),
-including causal directed acyclic graphs (**DAG**s)
+focus here is (initially) on graphical causal models (**GCM**s), with a
+slight preference for causal directed acyclic graphs (**DAG**s)
 
 > The models here should be treated as works in progress, created within
 > a particular context. Learning is messy complex, and there are
@@ -27,6 +27,11 @@ you credit the original work, which is indicated in a model’s metadata
 
 # Using this library
 
+There are some more detailed thoughts on GCM
+[syntax](graphical-causal-modelling-syntax) and
+[semantics](graphical-causal-modelling-semantics), but the practical
+aspects to use or contribute to this library are outlined below.
+
 ## Describing models, nodes, edges
 
 There are key features that we should include so that these models are
@@ -48,14 +53,12 @@ meta-data for the **model**, **nodes** and **edges**.
 >   example);
 > - *derived-from-literature*, such as representation of a theory;
 > - *elicited-from-experts*, or;
-> - *learned-from-data*, such as causal discovery, or;
+> - *learned-from-data*, such as causal discovery (and some SEMs), or;
 > - some combination of the above.
 >
 > Additional tags can be added to support searchable models in the
-> future.
->
-> The **doi** or **url** to where the model was sourced from, if
-> applicable.
+> future. A **source** field, which can hold the full citation. The
+> **doi** or **url** to where the model was sourced from, if applicable.
 
 ### Nodes
 
@@ -157,6 +160,7 @@ digraph {
 // Model
 // the "context" field should *always* be included.
 context="This model is for illustation only, but describes a relationship involving education.";
+source="Rohrer, J. M. (2018). Thinking clearly about correlations and causation: Graphical causal models for observational data. Advances in methods and practices in psychological science, 1(1), 27-42."
 doi="https://doi.org/10.1177/2515245917745629";
 
 // Nodes

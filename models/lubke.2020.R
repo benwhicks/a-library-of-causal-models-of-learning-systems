@@ -23,7 +23,7 @@ C -> Y;
 lubke.2020.fig2 <- '
 digraph fork {
 // Model
-context="Illustrative example of a fork / confoudner pattern, where adjusting removes bias.";
+context="Illustrative example of a fork / confounder pattern, where adjusting removes bias.";
 tags = "illustrative";
 # TODO: Review this
 doi="https://doi-org/10.1080/10691898.2020.1752859";

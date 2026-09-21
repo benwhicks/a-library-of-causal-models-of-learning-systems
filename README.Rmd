@@ -42,7 +42,7 @@ There are key features that we should include so that these models are more read
 >  -  some combination of the above. 
 > 
 > Additional tags can be added to support searchable models in the future. 
-> 
+> A **source** field, which can hold the full citation. 
 > The **doi** or **url** to where the model was sourced from, if applicable. 
 
 ### Nodes
@@ -90,6 +90,7 @@ digraph {
 // Model
 // the "context" field should *always* be included.
 context="This model is for illustation only, but describes a relationship involving education.";
+source="Rohrer, J. M. (2018). Thinking clearly about correlations and causation: Graphical causal models for observational data. Advances in methods and practices in psychological science, 1(1), 27-42."
 doi="https://doi.org/10.1177/2515245917745629";
 
 // Nodes

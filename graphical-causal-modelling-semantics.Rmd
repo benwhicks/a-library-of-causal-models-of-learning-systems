@@ -18,6 +18,6 @@ The baseline is a Causal DAG, where ...
 
 ### GCMs from data
 
-SEMs are here too. 
+SEMs are here too. Kinda. It depends if they frame the original path diagram as a "conceptual model"
 
 We also need to interperet the path diagrams of SEMs. A good translation will probably be including only edges between round nodes (constructs?) and not the measurement part, and typically only 
