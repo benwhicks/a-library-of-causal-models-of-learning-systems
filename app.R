@@ -33,6 +33,7 @@ ui <- fluidPage(
         selected = model_choices[[1]][1],
         options = list(placeholder = "Search by paper or figure...")
       ),
+      uiOutput("copy_button_area"),
       helpText("Grouped by source paper. Entries marked \"(coming soon)\" have a citation but no DOT graph yet.")
     ),
     mainPanel(
@@ -46,6 +47,41 @@ server <- function(input, output, session) {
   selected_entry <- reactive({
     req(input$model_id)
     find_entry(model_library, input$model_id)
+  })
+
+  output$copy_button_area <- renderUI({
+    entry <- selected_entry()
+    if (is.null(entry) || isTRUE(entry$is_stub)) return(NULL)
+
+    tagList(
+      tags$textarea(id = "dot_source", style = "display:none;", entry$dot),
+      tags$button(
+        "Copy model code", type = "button", class = "btn btn-default",
+        style = "margin-top: 5px;",
+        onclick = "
+          var ta = document.getElementById('dot_source');
+          var btn = this;
+          var restore = function() {
+            var orig = btn.getAttribute('data-orig') || 'Copy model code';
+            setTimeout(function() { btn.innerText = orig; }, 1500);
+          };
+          if (!btn.getAttribute('data-orig')) btn.setAttribute('data-orig', btn.innerText);
+          function fallbackCopy() {
+            ta.style.display = 'block';
+            ta.select();
+            document.execCommand('copy');
+            ta.style.display = 'none';
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(ta.value).catch(fallbackCopy);
+          } else {
+            fallbackCopy();
+          }
+          btn.innerText = 'Copied!';
+          restore();
+        "
+      )
+    )
   })
 
   output$model_view <- renderUI({
