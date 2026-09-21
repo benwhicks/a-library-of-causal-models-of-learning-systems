@@ -6,6 +6,7 @@ digraph chain {
 // Model
 context="Illustrative example of a chain / mediator pattern, where adjusting causes bias.";
 tags = "illustrative";
+# TODO: Review this
 doi="https://doi-org/10.1080/10691898.2020.1752859";
 
 // Nodes
@@ -24,6 +25,7 @@ digraph fork {
 // Model
 context="Illustrative example of a fork / confoudner pattern, where adjusting removes bias.";
 tags = "illustrative";
+# TODO: Review this
 doi="https://doi-org/10.1080/10691898.2020.1752859";
 
 // Nodes
@@ -43,6 +45,7 @@ digraph collider {
 // Model
 context="Illustrative example of a collider pattern, where adjusting causes bias.";
 tags = "illustrative";
+# TODO: Review this
 doi="https://doi-org/10.1080/10691898.2020.1752859";
 
 // Nodes
@@ -62,6 +65,7 @@ digraph {
 // Model
 context="Illustrative example of an randomised experiement.";
 tags = "illustrative";
+# TODO: Review this
 doi="https://doi-org/10.1080/10691898.2020.1752859";
 
 // Nodes
@@ -83,6 +87,7 @@ digraph {
 // Model
 context="Illustrative example of mediation analysis DAG.";
 tags = "illustrative";
+# TODO: Review this
 doi="https://doi-org/10.1080/10691898.2020.1752859";
 
 // Nodes

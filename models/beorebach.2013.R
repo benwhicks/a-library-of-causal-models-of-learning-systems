@@ -143,6 +143,7 @@ fillcolor = grey70]
 RS    [label = "RS", description = "Residents sex"]
 RY    [label = "RY", description = "Residents year"]
 FS    [label = "FS", description = "Facultys sex"]
+# TODO: Review this
 FE    [label = "FS", description = "Facultys experience"]
 HO    [label = "HO", description = "Hospital"]
 SP    [label = "SP", description = "Specialty"]

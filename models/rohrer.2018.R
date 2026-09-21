@@ -11,6 +11,7 @@ doi="https://doi.org/10.1177/2515245917745629";
 
 // Nodes
 Int [label="Intelligence", description = "A persons natural or general level of intelligence"]
+# TODO: Review this
 EA [label="Educational Attainment", description = "A persons natural or general level of intelligence"]
 Inc [label="Income", description="A persons income"]
 
@@ -31,6 +32,7 @@ doi="https://doi.org/10.1177/2515245917745629";
 // Nodes
 G [label="Grades", description = "A persons grades over a long period of tie"]
 Int [label="Intelligence", description = "A persons natural or general level of intelligence"]
+# TODO: Review this
 EA [label="Educational Attainment", description = "A persons natural or general level of intelligence"]
 Inc [label="Income", description="A persons income"]
 

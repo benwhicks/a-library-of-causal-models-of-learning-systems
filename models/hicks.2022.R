@@ -7,12 +7,14 @@ edge [style = solid]
 
 // Model
 context="This model is mainly for illustation, but was modelled by a domain expert working in the student retention field. It is a loose, generalised view of modelling the intervention with students at risk of drop out. The variables are very high-level abstractions, and the model has not been applied to data. The dashed edge in this model indicates uncertainty about the presence of that edge.";
+# TODO: Review this
 doi="https://doi.org/10.1177/2515245917745629";
 
 
 // Nodes
 F [label="Fixed", description = "A students fixed attributes that they bring to their study, such as their prior learning, scoioeconomic advantage, race, gender, etc."]
 M0 [label="Mutable_T0", description = "A students changeble attributes before the intervention (the T0), such as: study habits, knowledge, time available, financial situation, etc."]
+# TODO: Review this
 M1 [label="Mutable_T0", description = "A students changeble attributes after the intervention (the T1), such as: study habits, knowledge, time available, financial situation, etc."]
 I [label="Intervention", description="A binary variable of whether or not the student receives the intervention. In the case of this study it was a phone call or similar meeting with a study advisor, in response to them being identified as at risk of failing. "]
 O [label="Outcome", description="The students end outcome. This could be pass / fail the coarse, or remain / drop-out of the coarse, depending on the aim of the intervention program."]
