@@ -30,7 +30,7 @@ ui <- fluidPage(
       selectizeInput(
         "model_id", "Model",
         choices = model_choices,
-        selected = model_choices[[1]][1],
+        selected = "hicks.2022.fig10",
         options = list(placeholder = "Search by paper or figure...")
       ),
       uiOutput("copy_button_area"),
