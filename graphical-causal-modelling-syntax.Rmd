@@ -25,6 +25,7 @@ To cover:
 - Partial ancestral graphs (PAGs). These include `@->`, `<->` and `@-@`. Will need a way to visually distinguish the last two. 
 - Generally adding flavour to any edge - such as using dashed lines to indicate uncertainty about an edge. 
 - How to articulate SEM paths. Need to think if it is any different. Should be the same as structure learning IMO. 
+- Polarity of edges. Called link polarity in CLD / system dynamics I belive.
 
 ```
 digraph pag_example {
