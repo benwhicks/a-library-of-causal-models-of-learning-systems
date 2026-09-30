@@ -23,7 +23,8 @@ you credit the original work, which is indicated in a model’s metadata
 
 # Exploring the models
 
-…to come…
+The models can be explored [this web
+app](https://connect.posit.cloud/benimben/content/01a0c219-027b-c4ee-28ae-993060739e2a).
 
 # Using this library
 

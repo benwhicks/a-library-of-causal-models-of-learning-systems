@@ -7,6 +7,7 @@ edge [style = solid]
 
 // Model
 context="This model is mainly for illustation, but was modelled by a domain expert working in the student retention field. It is a loose, generalised view of modelling the intervention with students at risk of drop out. The variables are very high-level abstractions, and the model has not been applied to data. The dashed edge in this model indicates uncertainty about the presence of that edge.";
+tags = "expert-elicited";
 # TODO: Review this
 doi="https://doi.org/10.1177/2515245917745629";
 

@@ -8,6 +8,7 @@ digraph {
 // Model
 context="This model is for illustation only, but describes a relationship involving education.";
 doi="https://doi.org/10.1177/2515245917745629";
+tags = "illustrative";
 
 // Nodes
 Int [label="Intelligence", description = "A persons natural or general level of intelligence"]
@@ -28,6 +29,7 @@ digraph {
 // Model
 context="This model is for illustation only, but describes a relationship involving education.";
 doi="https://doi.org/10.1177/2515245917745629";
+tags = "illustrative";
 
 // Nodes
 G [label="Grades", description = "A persons grades over a long period of tie"]
@@ -51,6 +53,7 @@ digraph {
 // Model
 context="This model is for illustation only, but describes a relationship involving education.";
 doi="https://doi.org/10.1177/2515245917745629";
+tags = "illustrative";
 
 // Nodes
 C_Int [label="Childhood Intelligence", description = "A persons natural or general level of intelligence at childhood"]

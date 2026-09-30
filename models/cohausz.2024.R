@@ -58,7 +58,7 @@ source="Cohausz, L. (2025). Why the Future of AIED is Causal: Arguments for C
 
 doi="https://doi.org/10.1007/978-3-031-99261-2_2";
 
-tags="illustrative"
+tags="illustrative";
 
 // Nodes
 H [label="Height", description="The height of the student."]
@@ -83,7 +83,7 @@ source="Cohausz, L. (2025). Why the Future of AIED is Causal: Arguments for C
 
 doi="https://doi.org/10.1007/978-3-031-99261-2_2";
 
-tags="illustrative"
+tags="illustrative";
 
 // Nodes
 MS [label="Math Skill", description="The skill in mathematics of the student.", 

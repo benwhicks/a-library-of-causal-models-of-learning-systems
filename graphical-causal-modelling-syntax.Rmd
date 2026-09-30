@@ -8,6 +8,9 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+> **Node options**
+> shape, fill, borderstyle...
+> 
 
 > **Edge options**
 > [dir = ...]
